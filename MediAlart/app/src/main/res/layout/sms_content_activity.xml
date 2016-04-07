@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/medicine_name"
+        android:background="#50DEB887"
+        android:layout_width="395dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="Add Medicine name"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:hint="Date"
+            android:id="@+id/sms_date"
+            android:onClick="click_Date"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:hint="Time"
+            android:clickable="true"
+            android:id="@+id/ed_time"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="click_Time"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/description_name"
+        android:background="#50DEB887"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="80sp" />
+
+    <EditText
+        android:id="@+id/mobile_number"
+        android:background="#50DEB887"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:hint="mobile number"
+        android:layout_width="match_parent"
+        android:layout_height="40sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/sms_button"
+            android:background="#7F00bb00"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:height="40dp"
+            android:text="SET SMS"
+            android:onClick="setSms"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/cancel_sms"
+            android:background="#7F00bb00"
+            android:onClick="cancelInsert"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="CANCEL"
+            android:height="40dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:background="#B0DEB887"
+        style="@style/ListViewStyle.Light"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

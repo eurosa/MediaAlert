@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/medicine_na"
+        android:textColor="#000000"
+        android:background="#50DEB887"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="Add Medicine name"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:hint="Date"
+            android:id="@+id/ed_date"
+            android:onClick="click_Date"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:hint="Time"
+            android:clickable="true"
+            android:id="@+id/ed_time"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="click_Time"
+            android:textSize="25sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/radio_dose"
+                android:onClick="click_radio_dose"
+                android:text="Dosage"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:textColor="#000000"
+                android:onClick="click_radio_quantity"
+                android:id="@+id/radio_quantity"
+                android:textSize="20sp"
+                android:text="Quantity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_dose"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            android:hint="Dosage"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_quantity"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:hint="Quantity"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/stock_name"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:hint="Storage"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/interval_name"
+            android:background="#50DEB887"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:inputType="numberDecimal"
+            android:hint="Interval (H)"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/description_name"
+        android:textColor="#000000"
+        android:background="#50DEB887"
+        android:gravity="center"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="80sp" />
+    <LinearLayout
+        android:background="#B0DEB887"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="#000000"
+            android:id="@+id/insert_button"
+            android:background="#7F00bb00"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:height="40dp"
+            android:text="SET ALARM"
+            android:onClick="setAlarm"
+            android:layout_height="match_parent" />
+        <Button
+            android:textColor="#000000"
+            android:id="@+id/cancel_insert"
+            android:background="#7F00bb00"
+            android:onClick="cancelInsert"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="CANCEL"
+            android:height="40dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

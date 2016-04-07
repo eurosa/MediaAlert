@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    >
+    <CheckBoxPreference android:key="vibrate_pref"
+        android:title="Vibrate"
+        android:summary="Vibrate on notification"
+        android:defaultValue="true" />
+
+    <RingtonePreference android:key="ringtone_pref"
+        android:title="Set Ringtone"
+        android:summary="Default"
+        android:ringtoneType="all"
+        android:showDefault="true"
+        android:showSilent="false" />
+
+    <CheckBoxPreference android:key="sound_pref"
+        android:title="Sound"
+        android:summary="Sound on notification"
+        android:defaultValue="true" />
+
+    <ListPreference android:key="time_option"
+        android:title="Remind me before "
+        android:summary="0 min"
+        android:entries="@array/time_option_arr"
+        android:entryValues="@array/val_arr"
+        android:defaultValue="0" />
+    <ListPreference android:key="quantity_option"
+        android:title="Remind me if the medicine is under...."
+        android:summary="1 unit"
+        android:entries="@array/unit_option_arr"
+        android:entryValues="@array/val_arr"
+        android:defaultValue="0" />
+</PreferenceScreen>
